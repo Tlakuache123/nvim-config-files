@@ -2,6 +2,9 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
+      window = {
+        width = 30,
+      },
       event_handlers = {
         {
           event = "file_opened",
