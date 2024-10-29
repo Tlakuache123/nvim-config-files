@@ -43,6 +43,18 @@ return {
     },
   },
   {
+    "ellisonleao/gruvbox.nvim",
+    lazy = true,
+    name = "gruvbox",
+    opts = {
+      terminal_colors = true,
+      undercurl = true,
+      inverse = true,
+      contrast = "hard",
+      transparent_mode = true,
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
