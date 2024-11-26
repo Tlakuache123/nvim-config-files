@@ -5,6 +5,10 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+-- Select all
+keymap.set("n", "<C-a>", "gg<S-v>G")
+
+--[[
 -- Quick save / quit
 keymap.set("n", "<leader>q", ":q<CR>", opts)
 keymap.set("n", "<leader>w", ":w<CR>", opts)
@@ -15,9 +19,6 @@ keymap.set("n", "-", "<C-x>")
 
 -- Delete a word backward
 keymap.set("n", "dw", "vb_d")
-
--- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Jumplist
 keymap.set("n", "<C-m>", "<C-i>", opts)
@@ -47,3 +48,4 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
+--]]
