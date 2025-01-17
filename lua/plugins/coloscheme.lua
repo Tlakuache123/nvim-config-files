@@ -14,13 +14,17 @@ return {
       undercurl = true,
       inverse = true,
       contrast = "hard",
-      transparent_mode = false,
+      transparent_mode = true,
     },
+  },
+  {
+    "neanias/everforest-nvim",
+    name = "everforest",
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "everforest",
     },
   },
 }
